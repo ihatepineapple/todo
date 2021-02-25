@@ -29,6 +29,7 @@ const renderTodo = (todo) => {
     list.append(node);
   }
 
+  dinamicItems()
 }
 
 const addTodo = (text) => {
@@ -60,7 +61,21 @@ function deleteTodo(key) {
 
     todoItems = todoItems.filter(item => item.id !== Number(key));
     renderTodo(todo);
+    dinamicItems();
 };
+
+const dinamicItems = () => {
+    const dinNum = document.getElementById("din-items");
+    let checkedItems = todoItems.filter(item => !item.checked);
+
+    dinNum.innerHTML = `${checkedItems.length} items left`
+
+    // if (checkedItems.length == 0) {
+    //     dinNum.innerHTML = "No items on the list"
+    // } else {
+    //     dinNum.innerHTML = `${checkedItems.length} items left`
+    // }
+}
 
 const form = document.querySelector('.entry-form');
 
