@@ -5,3 +5,33 @@
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+.done span {
+    text-decoration: line-through;
+  }
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.tick {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.tick::before {
+    content: '✓';
+    font-size: 20px;
+    display: none;
+}
+  
+.done .tick::before {
+    display: inline;
+}
+  
