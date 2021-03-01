@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>To-Do app</title>
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script  src="https://kit.fontawesome.com/ee0eb480be.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title-box">
+        <h1 class="title">To-Do</h1>
+        <span><i class="fas fa-sun"></i></span>
+      </div>
+
+      <div class="form-container">
+        <form class="entry-form">
+          <input
+            autofocus
+            type="text"
+            placeholder="Enter a new task"
+            class="todo-input"
+          />
+        </form>
   
-  <title>To-Do app</title>
+        <ul class="todo-list"></ul>
+      </div>
 
-  <link rel="stylesheet" href="./styles/styles.css"/>
-  <script src="https://kit.fontawesome.com/ee0eb480be.js" crossorigin="anonymous"></script>
+      <!-- NOT COMPLETE, FILTER BY BUTTONS NOT OK-->
 
-</head>
-<body>
-
-  <div>
-    <h1>Todo</h1>
-  </div>
-  
-
-  <form class="entry-form">
-    <input autofocus type="text" placeholder="Enter a new task" class="todo-input">
-  </form>
-
-  <ul class="todo-list">
-
-  </ul>
-
-  
-  <div>
-    <div class="items-left"><span id="din-items">No items on the list</span></div>
-    <div class="filters">
+      <div>
+        <div class="items-left">
+          <span id="din-items">No items on the list</span>
+        </div>
+        <!-- <div class="filters">
       <span id="all">All</span>
       <span id="active">Active</span>
       <span id="checked">Completed</span>
    </div>
-    <div class="clear-complete"><span id="clear-completed">Clear Completed</span></div>
-  </div>
+    <div class="clear-complete"><span id="clear-completed">Clear Completed</span></div> -->
+      </div>
+    </div>
 
-  
-
-  
-
-  <!-- Drag and drop to reorder list -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Irene Asensio</a>.
-  </div>
-  <script src="./js/index.js"></script>
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

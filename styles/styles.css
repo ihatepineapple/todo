@@ -1,10 +1,66 @@
-.attribution { 
-    font-size: 11px; 
-    text-align: center; }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+body {
+    font-family: 'Open Sans', 'sans-serif';
+    background-color: hsl(235, 21%, 11%);
+    margin: 0;
 }
+
+.wrapper {
+    background-image: url('../images/bg-mobile2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;   
+    padding: 20px;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+
+
+// DARK THEME
+
+.form-container {
+    width: 100vw;
+    padding: 20px;   
+}
+
+.entry-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todo-input {
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(237, 14%, 26%);
+    color: hsl(234, 39%, 85%);
+    padding-left: 20px;
+}
+
+.todo-list {
+    list-style-type: none;
+    background-color: hsl(237, 14%, 26%);
+    color: hsl(234, 39%, 85%);
+    height: 35px;
+}
+
 
 .done span {
     text-decoration: line-through;
@@ -17,7 +73,7 @@ input[type="checkbox"] {
 .tick {
     width: 20px;
     height: 20px;
-    border: 1px solid #333;
+    border: 1px solid hsl(234, 39%, 85%);
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -35,3 +91,7 @@ input[type="checkbox"] {
     display: inline;
 }
   
+.hidden {
+    visibility: hidden;
+}
+

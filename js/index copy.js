@@ -16,12 +16,11 @@ const renderTodo = (todo) => {
     node.setAttribute('data-key', todo.id);
 
     node.innerHTML = `
-    <div class="task-line">
     <input id="${todo.id}" type="checkbox"/>
     <label for="${todo.id}" class="tick js-tick"></label>
     <span>${todo.text}</span>
     <i class="far fa-times-circle delete-todo js-delete-todo"></i>
-    </div>
+    </button>
   `;
 
   if (item) {
@@ -101,4 +100,27 @@ list.addEventListener('click', event => {
       deleteTodo(itemKey);
     }
 });
+
+
+const renderActive = () => {
+    // let inactiveItems = todoItems.filter(item => !item.checked);
+    // console.log(inactiveItems)
+    const inactiveItems = document.querySelectorAll(".done");
+    console.log(inactiveItems)
+    inactiveItems.setAttribute('class', '.hidden');
+};
+
+
+const seeAll = document.getElementById("all");
+const seeActive = document.getElementById("active");
+const seeCompleted = document.getElementById("checked");
+
+seeAll.addEventListener('click', function() {
+    renderTodo();
+});
+
+seeActive.addEventListener('click', function() {
+    renderActive();
+});
+
 
