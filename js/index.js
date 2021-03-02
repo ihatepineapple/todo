@@ -103,18 +103,10 @@ list.addEventListener('click', event => {
 
 const mode = document.getElementById('toggle-button');
 
-const toggleButton = () => {
-    if (mode.innerText == `Light Mode`) {
-        mode.innerText == `Dark Mode`;
-      } else {
-        mode.innerText == `Light Mode`;
-      }
-};
 
 mode.addEventListener('click', function() {
   let element = document.body;
   element.classList.toggle("light-mode");
-  toggleButton()
 
 })
 
