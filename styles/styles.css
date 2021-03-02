@@ -6,13 +6,10 @@ body {
     margin: 0;
     background-image: url('../images/bg-mobile2.jpg');
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    /* position: relative; */
     width: 100%;
 }
 
 .wrapper {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,8 +28,6 @@ body {
 .title {
     text-transform: uppercase;
 }
-
-
 
 // DARK THEME
 
@@ -115,4 +110,39 @@ input[type="checkbox"] {
 #din-items {
     color:hsl(234, 39%, 85%);
     font-size: 0.9em;
+}
+
+@media only screen and (min-width: 375px) {
+
+    body {
+        font-family: 'Open Sans', 'sans-serif';
+        background-color: hsl(235, 21%, 11%);
+        margin: 0;
+        background-image: url('../images/bg-desktop2.jpg');
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        /* position: relative; */
+        width: 100%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .title-box {
+        width: 60vw;
+    }
+
+    .form-container {
+        width: 60vw;
+        padding: 20px;   
+    }
+
+    .items-left {
+        width: 60vw;
+    }
 }
