@@ -16,13 +16,11 @@ const renderTodo = (todo) => {
     node.setAttribute('data-key', todo.id);
 
     node.innerHTML = `
-    <div class="task-line">
     <input id="${todo.id}" type="checkbox"/>
     <label for="${todo.id}" class="tick js-tick"></label>
-    <span>${todo.text}</span>
-    <i class="far fa-times-circle delete-todo js-delete-todo"></i>
-    </div>
-  `;
+    <span class="text-task" >${todo.text}</span>
+    <i class="far fa-times-circle delete-todo js-delete-todo"></i> 
+    `;
 
   if (item) {
     list.replaceChild(node, item);
