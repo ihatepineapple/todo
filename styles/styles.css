@@ -1,148 +1,197 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 body {
-    font-family: 'Open Sans', 'sans-serif';
-    background-color: hsl(235, 21%, 11%);
-    margin: 0;
-    background-image: url('../images/bg-mobile2.jpg');
-    background-repeat: no-repeat;
-    width: 100%;
+  font-family: 'Open Sans', 'sans-serif';
+  background-color: #161722;
+  margin: 0;
+  background-image: url("../images/bg-mobile2.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
 }
 
 .title-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: white;   
-    padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding: 20px;
 }
 
 .title {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-// DARK THEME
-
 .form-container {
-    width: 100vw;
-    padding: 20px;   
+  width: 100vw;
+  padding: 20px;
 }
 
 .entry-form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .todo-input {
-    height: 35px;
-    border-radius: 5px;
-    border: none;
-    background-color: hsl(237, 14%, 26%);
-    color: hsl(234, 39%, 85%);
-    padding-left: 20px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  background-color: #393a4c;
+  color: #cacde8;
+  padding-left: 20px;
 }
 
 .todo-list {
-    list-style-type: none;
-    padding: 0;
-   
+  list-style-type: none;
+  padding: 0;
 }
 
 li {
-    background-color: hsl(237, 14%, 26%);
-    color: hsl(234, 39%, 85%);
-    height: 40px;
-    padding-left: 10px;
-    padding-right: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border-bottom: 1px solid hsl(234, 11%, 52%);
+  background-color: #393a4c;
+  color: #cacde8;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 1px solid #777a92;
 }
 
 .text-task {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .delete-todo {
-    color: hsl(234, 11%, 52%);
-    margin-left: auto;
+  color: #777a92;
+  margin-left: auto;
 }
 
 .done span {
-    text-decoration: line-through;
-  }
+  text-decoration: line-through;
+}
 
 input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
 .tick {
-    width: 18px;
-    height: 18px;
-    border: 1px solid hsl(234, 11%, 52%);
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #777a92;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
-  
+
 .tick::before {
-    content: '✓';
-    font-size: 20px;
-    display: none;
+  content: '✓';
+  font-size: 20px;
+  display: none;
 }
-  
+
 .done .tick::before {
-    display: inline;
+  display: inline;
 }
-  
+
 #din-items {
-    color:hsl(234, 39%, 85%);
-    font-size: 0.9em;
+  color: #cacde8;
+  font-size: 0.9em;
 }
 
 @media only screen and (min-width: 375px) {
-
-    body {
-        font-family: 'Open Sans', 'sans-serif';
-        background-color: hsl(235, 21%, 11%);
-        margin: 0;
-        background-image: url('../images/bg-desktop2.jpg');
-        background-repeat: no-repeat;
-        /* background-size: cover; */
-        /* position: relative; */
-        width: 100%;
-    }
-
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-    }
-    
-    .title-box {
-        width: 60vw;
-    }
-
-    .form-container {
-        width: 60vw;
-        padding: 20px;   
-    }
-
-    .items-left {
-        width: 60vw;
-    }
+  body {
+    font-family: 'Open Sans', 'sans-serif';
+    background-color: #161722;
+    margin: 0;
+    background-image: url("../images/bg-desktop2.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+  }
+  .title-box {
+    width: 60vw;
+  }
+  .form-container {
+    width: 60vw;
+    padding: 20px;
+  }
+  .items-left {
+    width: 60vw;
+  }
 }
+
+.light-mode {
+  background-color: white;
+  color: #484b6a;
+}
+
+.light-mode .todo-input, .light-mode li {
+  background-color: #fafafa;
+  color: #484b6a;
+}
+
+.light-mode #din-items {
+  color: #484b6a;
+}
+/*# sourceMappingURL=styles.css.map */
